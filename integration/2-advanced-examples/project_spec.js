@@ -16,11 +16,11 @@ describe('Visiting Website', () => {
      cy.wait(2000);
      cy.get('[aria-label="Bold"] > .tox-icon > svg').click();
      cy.wait(4000);
-     
+
 
   })
 
-    it.skip('drag and drop', () => {
+    it('drag and drop', () => {
       cy.visit('http://the-internet.herokuapp.com/drag_and_drop');
         cy.get('#column-a').drag('#column-b');
         cy.get('#column-a').should('have.text','B');
